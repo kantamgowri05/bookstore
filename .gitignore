@@ -1,0 +1,20 @@
+# Django
+db.sqlite3
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Downloaded Canva webpage assets
+static/images/Brown Green Aesthetic Book Store Welcome Banner - Templates by Canva_files/
+static/images/Brown Green Aesthetic Book Store Welcome Banner - Templates by Canva.html

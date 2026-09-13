@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <style>
+    /* Contact Page Specific Styling */
+    .contact-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+      border-radius: 15px;
+      margin: 30px auto;
+      width: 80%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .contact-form {
+      flex: 1;
+      margin-right: 30px;
+    }
+
+    .contact-form h2 {
+      color: #004d80;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background: #004d80;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #0073e6;
+    }
+
+    .contact-image {
+      flex: 1;
+    }
+
+    .contact-image img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">📚 BlueBook</div>
+  <ul class="nav-links">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'types' %}">Types</a></li>
+    <li><a href="{% url 'authors' %}">Authors</a></li>
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+    <li><a href="{% url 'register' %}">Register</a></li>
+    <li><a href="{% url 'login' %}">Login</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Image -->
+    <div class="contact-image">
+      <img src="{% static 'images/contact.jpg' %}" alt="Contact Us">
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 BlueBook. All Rights Reserved.</footer>
+</body>
+</html>

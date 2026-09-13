@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Types of Books</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">📚 BlueBook</div>
+  <ul class="nav-links">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'types' %}">Types</a></li>
+    <li><a href="{% url 'authors' %}">Authors</a></li>
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+    <li><a href="{% url 'register' %}">Register</a></li>
+    <li><a href="{% url 'login' %}">Login</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <h2>Types of Books</h2>
+
+  <!-- Fiction -->
+  <h3 class="category-title">Fiction</h3>
+  <div class="cards">
+    <div class="card"><img src="{% static 'images/fiction1.jpg' %}" alt="Fiction 1"><h4>The Lost World</h4></div>
+    <div class="card"><img src="{% static 'images/fiction2.jpg' %}" alt="Fiction 2"><h4>Shadow Hunters</h4></div>
+    <div class="card"><img src="{% static 'images/fiction3.jpg' %}" alt="Fiction 3"><h4>Dream Catcher</h4></div>
+  </div>
+
+  <!-- Romance -->
+  <h3 class="category-title">Romance</h3>
+  <div class="cards">
+    <div class="card"><img src="{% static 'images/romance1.jpg' %}" alt="Romance 1"><h4>Love Forever</h4></div>
+    <div class="card"><img src="{% static 'images/romance2.jpg' %}" alt="Romance 2"><h4>Endless Hearts</h4></div>
+    <div class="card"><img src="{% static 'images/romance3.jpg' %}" alt="Romance 3"><h4>Paris Nights</h4></div>
+  </div>
+
+  <!-- Science -->
+  <h3 class="category-title">Science</h3>
+  <div class="cards">
+    <div class="card"><img src="{% static 'images/science1.jpg' %}" alt="Science 1"><h4>Space Explorers</h4></div>
+    <div class="card"><img src="{% static 'images/science2.jpg' %}" alt="Science 2"><h4>Quantum Physics</h4></div>
+    <div class="card"><img src="{% static 'images/science3.jpg' %}" alt="Science 3"><h4>The Human Brain</h4></div>
+  </div>
+
+  <!-- Kids -->
+  <h3 class="category-title">Kids</h3>
+  <div class="cards">
+    <div class="card"><img src="{% static 'images/kids1.jpg' %}" alt="Kids 1"><h4>Fairy Tales</h4></div>
+    <div class="card"><img src="{% static 'images/kids2.jpg' %}" alt="Kids 2"><h4>Adventure Time</h4></div>
+    <div class="card"><img src="{% static 'images/kids3.jpg' %}" alt="Kids 3"><h4>Magic World</h4></div>
+  </div>
+
+  <!-- Comics -->
+  <h3 class="category-title">Comics</h3>
+  <div class="cards">
+    <div class="card"><img src="{% static 'images/comics1.jpg' %}" alt="Comics 1"><h4>Spider-Man</h4></div>
+    <div class="card"><img src="{% static 'images/comics2.jpg' %}" alt="Comics 2"><h4>Batman Returns</h4></div>
+    <div class="card"><img src="{% static 'images/comics3.jpg' %}" alt="Comics 3"><h4>Iron Man</h4></div>
+  </div>
+
+  <!-- History -->
+  <h3 class="category-title">History</h3>
+  <div class="cards">
+    <div class="card"><img src="{% static 'images/history1.jpg' %}" alt="History 1"><h4>World War II</h4></div>
+    <div class="card"><img src="{% static 'images/history2.jpg' %}" alt="History 2"><h4>Ancient Civilizations</h4></div>
+    <div class="card"><img src="{% static 'images/history3.jpg' %}" alt="History 3"><h4>Freedom Fighters</h4></div>
+  </div>
+
+</section>
+
+<footer>© 2025 BlueBook. All Rights Reserved.</footer>
+</body>
+</html>

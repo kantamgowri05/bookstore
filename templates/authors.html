@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Authors</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">📚 BlueBook</div>
+  <ul class="nav-links">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'types' %}">Types</a></li>
+    <li><a href="{% url 'authors' %}">Authors</a></li>
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+    <li><a href="{% url 'register' %}">Register</a></li>
+    <li><a href="{% url 'login' %}">Login</a></li>
+  </ul>
+</nav>
+
+<!-- Authors Section -->
+<section class="section">
+  <h2>Popular Authors</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="{% static 'images/author1.jpg' %}" alt="J.K. Rowling">
+      <h3>J.K. Rowling</h3>
+    </div>
+    <div class="card">
+      <img src="{% static 'images/author2.jpg' %}" alt="George R.R. Martin">
+      <h3>George R.R. Martin</h3>
+    </div>
+    <div class="card">
+      <img src="{% static 'images/author3.jpg' %}" alt="Stephen King">
+      <h3>Stephen King</h3>
+    </div>
+    <div class="card">
+      <img src="{% static 'images/author4.jpg' %}" alt="Agatha Christie">
+      <h3>Agatha Christie</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>© 2025 BlueBook. All Rights Reserved.</footer>
+
+</body>
+</html>
